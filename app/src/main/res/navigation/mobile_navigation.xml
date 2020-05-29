@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_inicio" />
 
     <fragment
-        android:id="@+id/citas"
-        android:name="com.example.central.administrator.CitasFragment"
-        android:label="Citas"
-        tools:layout="@layout/fragment_citas" />
-
-    <fragment
         android:id="@+id/veterinarios"
         android:name="com.example.central.administrator.VeterinariosFragment"
         android:label="Veterinarios"
@@ -34,5 +28,11 @@
         android:name="com.example.central.administrator.MascotasFragment"
         android:label="Mascotas"
         tools:layout="@layout/fragment_mascotas" />
+
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.example.central.administrator.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
 
 </navigation>

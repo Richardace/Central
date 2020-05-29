@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.central.R;
 
-public class CitasFragment extends Fragment {
+public class PerfilFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_citas, container, false);
+        View root = inflater.inflate(R.layout.fragment_perfil, container, false);
         return root;
     }
 }
