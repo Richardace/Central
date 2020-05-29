@@ -3,25 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/inicio">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.central.administrator.HomeFragment"
-        android:label="Principal"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/inicio"
+        android:name="com.example.central.administrator.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.central.administrator.DashboardFragment"
+        android:id="@+id/citas"
+        android:name="com.example.central.administrator.CitasFragment"
+        android:label="Citas"
+        tools:layout="@layout/fragment_citas" />
+
+    <fragment
+        android:id="@+id/veterinarios"
+        android:name="com.example.central.administrator.VeterinariosFragment"
         android:label="Veterinarios"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_veterinarios" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.central.administrator.NotificationsFragment"
+        android:id="@+id/clientes"
+        android:name="com.example.central.administrator.ClientesFragment"
         android:label="Clientes"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_clientes" />
 
+    <fragment
+        android:id="@+id/mascotas"
+        android:name="com.example.central.administrator.MascotasFragment"
+        android:label="Mascotas"
+        tools:layout="@layout/fragment_mascotas" />
 
 </navigation>
