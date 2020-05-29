@@ -9,17 +9,17 @@
         android:id="@+id/navigation_home"
         android:name="com.example.central.veterinary.home.HomeFragment"
         android:label="Pagina Principal"
-        tools:layout="@layout/veterinary_fragment_home" />
+        tools:layout="@layout/customer_fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.central.veterinary.dashboard.DashboardFragment"
         android:label="Ver Clientes"
-        tools:layout="@layout/veterinary_fragment_dashboard" />
+        tools:layout="@layout/customer_fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.central.veterinary.notifications.NotificationsFragment"
         android:label="Ver Mascotas"
-        tools:layout="@layout/veterinary_fragment_notifications" />
+        tools:layout="@layout/customer_fragment_notifications" />
 </navigation>
