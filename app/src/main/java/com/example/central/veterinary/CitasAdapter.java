@@ -42,6 +42,7 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
         holder.id_cliente.setText(citas.get(position).getId_cliente());
         holder.id_mascota.setText(citas.get(position).getId_mascota());
         holder.hora.setText(citas.get(position).getHora());
+        holder.estado.setText(citas.get(position).getEstado());
         holder.fecha.setText(citas.get(position).getFecha());
         Picasso.get().load(citas.get(position).getImagen_estado()).into(holder.imagenEstado);
     }
@@ -57,10 +58,12 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
         TextView id_cliente;
         TextView fecha;
         TextView hora;
+        TextView estado;
         ImageView imagenEstado;
         public CitasViewHolder(@NonNull View itemView) {
             super(itemView);
             id_cita = itemView.findViewById(R.id.idCita);
+            estado = itemView.findViewById(R.id.estado);
             id_mascota = itemView.findViewById(R.id.idMascota);
             id_cliente = itemView.findViewById(R.id.idCliente);
             fecha = itemView.findViewById(R.id.idFecha);

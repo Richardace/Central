@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="194dp"
             android:id="@+id/imagenMascota"
-            app:srcCompat="@drawable/vetnews1"
+            app:srcCompat="@drawable/mascota1"
             android:scaleType="centerCrop" />
         </LinearLayout>
 

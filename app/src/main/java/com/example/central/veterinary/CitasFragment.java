@@ -44,8 +44,8 @@ public class CitasFragment extends Fragment {
 
     public ArrayList<Citas> cargarDatos(){
         ArrayList<Citas> listaCitas = new ArrayList<>();
-        listaCitas.add(new Citas("1","2","3","30/05/2020","10:00 AM - 12:00 AM","Cancelado","https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/010_x-512.png"));
-        listaCitas.add(new Citas("4","5","6","02/12/2020","04:00 PM - 06:00 PM","Atendido","https://cdn2.iconfinder.com/data/icons/interfaces-color-icons/104/21-interface-check-yes-vote-512.png"));
+        listaCitas.add(new Citas("1","2","3","30/05/2020","10:00 AM - 12:00 AM","Cancelado","https://img.icons8.com/fluent/96/cancel.png"));
+        listaCitas.add(new Citas("4","5","6","02/12/2020","04:00 PM - 06:00 PM","Atendido","https://img.icons8.com/officel/2x/approval.png"));
         return listaCitas;
     }
 }
