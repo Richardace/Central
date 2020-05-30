@@ -1,4 +1,4 @@
-package com.example.central.customer.dashboard;
+package com.example.central.customer.citas;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

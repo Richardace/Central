@@ -1,4 +1,4 @@
-package com.example.central.customer.home;
+package com.example.central.customer.inicio;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

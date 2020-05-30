@@ -1,4 +1,4 @@
-package com.example.central.customer.dashboard;
+package com.example.central.customer.citas;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

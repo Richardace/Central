@@ -1,4 +1,4 @@
-package com.example.central.customer.notifications;
+package com.example.central.customer.mascotas;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.central.R;
 
-public class NotificationsFragment extends Fragment {
+public class DashboardFragment extends Fragment {
 
-    private NotificationsViewModelCustomer notificationsViewModel;
+    private DashboardViewModelCustomer dashboardViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModelCustomer.class);
-        View root = inflater.inflate(R.layout.customer_fragment_notifications, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        dashboardViewModel =
+                ViewModelProviders.of(this).get(DashboardViewModelCustomer.class);
+        View root = inflater.inflate(R.layout.customer_fragment_dashboard, container, false);
+        final TextView textView = root.findViewById(R.id.text_dashboard);
+        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
