@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/nombreMascota"
                 android:textSize="15dp"
-                android:text="Paciente: Bruno"
+                android:text="Paciente: Huevo"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 />
             <TextView
