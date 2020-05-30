@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="194dp"
             android:id="@+id/imagenMascota"
-            app:srcCompat="@drawable/VetNews1"
+            app:srcCompat="@drawable/vetnews1"
             android:scaleType="centerCrop" />
         </LinearLayout>
 
@@ -83,6 +83,7 @@
                 android:layout_marginLeft="80dp"
                 android:textSize="10dp"
                 android:text="Raza Mascota"
+                android:layout_marginBottom="60dp"
                 android:textAppearance="?attr/textAppearanceBody2"/>
 
         </LinearLayout>

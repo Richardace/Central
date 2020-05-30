@@ -45,9 +45,7 @@ public class CitasFragment extends Fragment {
     public ArrayList<Citas> cargarDatos(){
         ArrayList<Citas> listaCitas = new ArrayList<>();
         listaCitas.add(new Citas("1","2","3","30/05/2020","10:00 AM - 12:00 AM","Cancelado","https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/010_x-512.png"));
-        listaCitas.add(new Citas("4","5","6","02/12/2020","04:00 PM - 06:00 PM","Cancelado","https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/010_x-512.png"));
-        //listaCitas.add(new Citas("Oreo","Raza: Labrador","Edad: 3","Sexo: Hembra","Richard Alexander","https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"));
-        //listaCitas.add(new Citas("Tonny","Raza: Bengala","Edad: 4","Sexo: Hembra","Karen Acevedo","https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"));
+        listaCitas.add(new Citas("4","5","6","02/12/2020","04:00 PM - 06:00 PM","Atendido","https://cdn2.iconfinder.com/data/icons/interfaces-color-icons/104/21-interface-check-yes-vote-512.png"));
         return listaCitas;
     }
 }

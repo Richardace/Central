@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -42,7 +43,7 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
         holder.id_mascota.setText(citas.get(position).getId_mascota());
         holder.hora.setText(citas.get(position).getHora());
         holder.fecha.setText(citas.get(position).getFecha());
-        //Picasso.get().load(mascotas.get(position).getImagen()).into(holder.imagenMascota);
+        Picasso.get().load(citas.get(position).getImagen_estado()).into(holder.imagenEstado);
     }
 
     @Override
@@ -56,6 +57,7 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
         TextView id_cliente;
         TextView fecha;
         TextView hora;
+        ImageView imagenEstado;
         public CitasViewHolder(@NonNull View itemView) {
             super(itemView);
             id_cita = itemView.findViewById(R.id.idCita);
@@ -63,6 +65,7 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
             id_cliente = itemView.findViewById(R.id.idCliente);
             fecha = itemView.findViewById(R.id.idFecha);
             hora = itemView.findViewById(R.id.idHora);
+            imagenEstado = itemView.findViewById(R.id.imagenEstado);
         }
     }
 }
