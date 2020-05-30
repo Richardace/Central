@@ -1,22 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".veterinary.dashboard.DashboardFragment">
+    tools:context=".veterinary.dashboardFragment"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E0F7FA">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ultimas Noticias"
+                android:textSize="18dp"
+                android:background="#03A9F4"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/esquinas_redondeadas">
+            <!-- Media -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                app:srcCompat="@drawable/VetNews1"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="8dp"
+                android:textSize="10dp"
+                android:text="El especialista en dermatología para animales, Belisario Roncallo destaca el crecimiento del sector de mascota en Barranquilla."
+                android:textAppearance="?attr/textAppearanceBody2"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="7dp"
+                    android:layout_margin="10dp"
+                    android:textColor="#616161"
+                    android:text="04 de Junio de 2019 - 10:48 || POR: DANIELA PASTORI"
+                    android:textAppearance="?attr/textAppearanceBody2"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/esquinas_redondeadas">
+
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="194dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/VetNews2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_margin="10dp"
+                    android:textSize="10dp"
+                    android:text="El tamaño del mercado de mascotas en Barranquilla tiene como
+referencia una población de animales que, de acuerdo a la
+Secretaría de Salud Pública, es de 136.940 perros y 49.298 gatos."
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="7dp"
+                    android:layout_margin="10dp"
+                    android:textColor="#616161"
+                    android:text="04 de Junio de 2019 - 09:58 || POR: NILSON ROMO MENDOZA"
+                    android:textAppearance="?attr/textAppearanceBody2"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
