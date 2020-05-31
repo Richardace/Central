@@ -2,24 +2,31 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    android:id="@+id/customer_mobile_navigation"
+    app:startDestination="@+id/customer_inicio">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.central.customer.home.HomeFragment"
+        android:id="@+id/customer_inicio"
+        android:name="com.example.central.customer.InicioFragment"
         android:label="Pagina Principal"
-        tools:layout="@layout/customer_fragment_home" />
+        tools:layout="@layout/customer_fragment_inicio" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.central.customer.dashboard.DashboardFragment"
-        android:label="Ver Clientes"
-        tools:layout="@layout/customer_fragment_dashboard" />
+        android:id="@+id/customer_citas"
+        android:name="com.example.central.customer.CitasFragment"
+        android:label="Ver Citas"
+        tools:layout="@layout/customer_fragment_citas" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.central.customer.notifications.NotificationsFragment"
+        android:id="@+id/customer_mascotas"
+        android:name="com.example.central.customer.MascotasFragment"
         android:label="Ver Mascotas"
-        tools:layout="@layout/customer_fragment_notifications" />
+        tools:layout="@layout/customer_fragment_mascotas" />
+
+    <fragment
+        android:id="@+id/customer_perfil"
+        android:name="com.example.central.customer.PerfilFragment"
+        android:label="Ver mi Perfil"
+        tools:layout="@layout/customer_fragment_perfil" />
+
 </navigation>
