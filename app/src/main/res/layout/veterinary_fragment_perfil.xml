@@ -1,186 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".veterinary.PerfilFragment"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        tools:context=".veterinary.PerfilFragment"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Imagen de Perfil"
-                android:textSize="15dp"
-                android:textColor="#03A9F4"
-                />
-            <!-- Imagen -->
-
-            <ImageView
-                android:layout_width="202dp"
-                android:layout_height="268dp"
-                android:layout_gravity="center"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/profile" />
-
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_height="675dp">
 
-                <!-- Campos -->
                 <LinearLayout
-                    android:layout_width="377dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16dp"
-                    android:text="Identificacion:"
-                    android:textColor="#03A9F4"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1234987678"
-                        android:layout_marginLeft="60dp"
-                        android:textColor="#9E9E9E"
-                        android:textSize="16dp"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="377dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16dp"
-                        android:text="Nombre:"
-                        android:textColor="#03A9F4"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="100dp"
-                        android:text="Camilo"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="#9E9E9E"
-                        android:textSize="16dp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="377dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16dp"
-                        android:text="Apellido:"
-                        android:textColor="#03A9F4"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="100dp"
-                        android:text="Contreras"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="#9E9E9E"
-                        android:textSize="16dp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="377dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16dp"
-                        android:text="Sexo:"
-                        android:textColor="#03A9F4"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IMAGEN DE PERFIL"
+                            android:layout_marginLeft="115dp"
+                            android:textAlignment="center"
+                            android:textColor="#03A9F4"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!-- Imagen -->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="120dp"
-                        android:text="Masculino"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="#9E9E9E"
-                        android:textSize="16dp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="377dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16dp"
-                        android:text="Telefono:"
-                        android:textColor="#03A9F4"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                    <AutoCompleteTextView
+                        android:id="@+id/query"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="93dp"
-                        android:text="3008766655"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="#9E9E9E"
-                        android:textSize="16dp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="377dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16dp"
-                        android:text="E-mail:"
-                        android:textColor="#03A9F4"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        />
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="110dp"
-                        android:text="camilo@gmail.com"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="#9E9E9E"
-                        android:textSize="16dp" />
-                </LinearLayout>
-            </LinearLayout>
+                        <ImageView
+                            android:layout_width="202dp"
+                            android:layout_height="268dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/profile" />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Campos -->
+                        <LinearLayout
+                            android:layout_width="377dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Identificacion:"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#03A9F4"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:text="1234987678"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="377dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre:"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#03A9F4"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:text="Camilo"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="377dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Apellido:"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#03A9F4"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="100dp"
+                                android:text="Contreras"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="377dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sexo:"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#03A9F4"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="120dp"
+                                android:text="Masculino"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="377dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Telefono:"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#03A9F4"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="93dp"
+                                android:text="3008766655"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="377dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="E-mail:"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#03A9F4"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="110dp"
+                                android:text="camilo@gmail.com"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
 
-    </com.google.android.material.card.MaterialCardView>
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
