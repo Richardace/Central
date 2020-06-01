@@ -20,6 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:text="Titulo"
             android:textAppearance="?attr/textAppearanceHeadline6"
             android:textSize="12dp" />
@@ -90,10 +92,9 @@
 
             <ImageView
                 android:id="@+id/imagenEstado"
-                android:layout_width="273dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/acepted" />
+                android:scaleType="centerCrop" />
 
         </LinearLayout>
 
@@ -102,7 +103,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
             android:text="Estado"
             android:textAppearance="?attr/textAppearanceBody2"
             android:textSize="14dp" />
