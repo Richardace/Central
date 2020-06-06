@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.central.veterinary.home.HomeFragment"
-        android:label="Pagina Principal"
-        tools:layout="@layout/customer_fragment_home" />
+    app:startDestination="@+id/navigation_dashboard">
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.central.veterinary.dashboard.DashboardFragment"
-        android:label="Ver Clientes"
-        tools:layout="@layout/customer_fragment_dashboard" />
+        android:name="com.example.central.veterinary.dashboardFragment"
+        android:label="Pagina Principal"
+        tools:layout="@layout/veterinary_fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.central.veterinary.notifications.NotificationsFragment"
-        android:label="Ver Mascotas"
-        tools:layout="@layout/customer_fragment_notifications" />
+        android:id="@+id/navigation_citas"
+        android:name="com.example.central.veterinary.CitasFragment"
+        android:label="Ver Citas"
+        tools:layout="@layout/veterinary_fragment_citas" />
+
+    <fragment
+        android:id="@+id/navigation_mascotas"
+        android:name="com.example.central.veterinary.MascotasFragment"
+        android:label="Ver Pacientes"
+        tools:layout="@layout/veterinary_fragment_mascotas" />
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.central.veterinary.PerfilFragment"
+        android:label="Ver Perfil"
+        tools:layout="@layout/veterinary_fragment_perfil" />
 </navigation>
