@@ -76,7 +76,7 @@
                     android:id="@+id/nombrVeterinario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Veterinario: Andres Ariza"
+                    android:text="Dr. Andres Ariza"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textSize="30dp" />
 
@@ -86,21 +86,21 @@
                     android:layout_height="wrap_content"
                     android:text="Identificación: 1024554302"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
                 <TextView
                     android:id="@+id/telefono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tarjeta Profesional: 37846827943"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
                 <TextView
                     android:id="@+id/email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Correo Electrónico: andresvet@gmail.com"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
 
             </LinearLayout>
@@ -134,7 +134,7 @@
                     android:id="@+id/nombreVeterinario2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Veterinario: Catalina Vega"
+                    android:text="Dra. Catalina Vega"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textSize="30dp" />
 
@@ -144,21 +144,21 @@
                     android:layout_height="wrap_content"
                     android:text="Identificación: 1938349404"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
                 <TextView
                     android:id="@+id/telefono2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tarjeta Profesional: 239843848930"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
                 <TextView
                     android:id="@+id/email2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Correo Electrónico: catavet@gmail.com"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
             </LinearLayout>
 
@@ -191,7 +191,7 @@
                     android:id="@+id/nombreVeterinario3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Veterinario: Jose Suarez"
+                    android:text="Dr. Jose Suarez"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textSize="30dp" />
 
@@ -201,21 +201,21 @@
                     android:layout_height="wrap_content"
                     android:text="Identificación: 298494983930"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
                 <TextView
                     android:id="@+id/telefono3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tarjeta Profesional: 2837843278"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
                 <TextView
                     android:id="@+id/email3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Correo Electrónico: joseluisvet@gmail.com"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:layout_marginBottom="60dp"/>
 
             </LinearLayout>
