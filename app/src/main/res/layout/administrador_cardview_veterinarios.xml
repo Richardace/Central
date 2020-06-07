@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.google.android.material.card.MaterialCardView android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#109DFA">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF7D50"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pacientes">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/containedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#2196F3"
+                    android:text="agregar veterinario" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Media -->
+
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:id="@+id/imagenVeterinario"
+                    app:srcCompat="@drawable/veterinario"
+                    android:scaleType="centerCrop"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/nombrVeterinario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veterinario: Andres Ariza"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/identificacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identificación: 1024554302"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarjeta Profesional: 37846827943"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Electrónico: andresvet@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+
+                    android:id="@+id/imagenVeterinario2"
+                    app:srcCompat="@drawable/veterinaria2"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/nombreVeterinario2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veterinario: Catalina Vega"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/identificacion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identificación: 1938349404"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/telefono2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarjeta Profesional: 239843848930"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/email2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Electrónico: catavet@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!-- Media -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+
+                    android:id="@+id/imagenVeterinario3"
+                    app:srcCompat="@drawable/veterinario3"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/nombreVeterinario3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veterinario: Jose Suarez"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/identificacion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identificación: 298494983930"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/telefono3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarjeta Profesional: 2837843278"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/email3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Electrónico: joseluisvet@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="60dp"/>
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>

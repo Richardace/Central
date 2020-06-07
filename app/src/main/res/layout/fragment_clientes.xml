@@ -7,7 +7,7 @@
     tools:context=".administrator.ClientesFragment"
     >
 
-    <include layout="@layout/administrador_cardview_mascotas"/>
+    <include layout="@layout/administrador_cardview_clientes"/>
 
 
 
