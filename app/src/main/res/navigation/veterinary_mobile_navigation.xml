@@ -9,21 +9,6 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.central.veterinary.dashboardFragment"
         android:label="Pagina Principal"
-<<<<<<< HEAD
-        tools:layout="@layout/customer_fragment_inicio" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.central.veterinary.dashboard.DashboardFragment"
-        android:label="Ver Clientes"
-        tools:layout="@layout/customer_fragment_mascotas" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.central.veterinary.notifications.NotificationsFragment"
-        android:label="Ver Mascotas"
-        tools:layout="@layout/customer_fragment_perfil" />
-=======
         tools:layout="@layout/veterinary_fragment_dashboard" />
 
     <fragment
@@ -43,5 +28,4 @@
         android:name="com.example.central.veterinary.PerfilFragment"
         android:label="Ver Perfil"
         tools:layout="@layout/veterinary_fragment_perfil" />
->>>>>>> master
 </navigation>
