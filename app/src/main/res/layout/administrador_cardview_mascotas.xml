@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="990dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -23,11 +23,11 @@
                 android:layout_height="wrap_content">
                 <!-- Media -->
                 <ImageView
+                    android:id="@+id/imagenMascota"
                     android:layout_width="match_parent"
                     android:layout_height="194dp"
-                    android:id="@+id/imagenMascota"
-                    app:srcCompat="@drawable/mascota1"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/mascota1" />
             </LinearLayout>
 
             <LinearLayout
@@ -38,23 +38,22 @@
 
                 <!-- Title, secondary and supporting text -->
                 <TextView
+                    android:id="@+id/nombreMascota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/nombreMascota"
-                    android:textSize="15dp"
                     android:text="Paciente: Bruno"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    />
+                    android:textSize="15dp" />
+
                 <TextView
+                    android:id="@+id/duenioMascota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textSize="10dp"
                     android:text="Dueño: Diego Navas"
-                    android:id="@+id/duenioMascota"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?android:attr/textColorSecondary"
-                    />
+                    android:textSize="10dp" />
 
             </LinearLayout>
 
@@ -70,27 +69,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:textSize="10dp"
                     android:text="Sexo: Macho"
-                    android:textAppearance="?attr/textAppearanceBody2" />
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
                 <TextView
                     android:id="@+id/edadMascota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
-                    android:textSize="10dp"
                     android:text="Edad: 2 años"
-                    android:textAppearance="?attr/textAppearanceBody2" />
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
                 <TextView
                     android:id="@+id/razaMascota"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
-                    android:textSize="10dp"
                     android:text="Raza: Labrador"
-                    android:textAppearance="?attr/textAppearanceBody2"/>
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
             </LinearLayout>
 
@@ -101,12 +100,12 @@
 
                 <!-- Media -->
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-
                     android:id="@+id/imagenMascota2"
-                    app:srcCompat="@drawable/mascota2"
-                    android:scaleType="centerCrop" />
+                    android:layout_width="match_parent"
+
+                    android:layout_height="194dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/mascota2" />
             </LinearLayout>
 
             <LinearLayout
@@ -117,23 +116,22 @@
 
                 <!-- Title, secondary and supporting text -->
                 <TextView
+                    android:id="@+id/nombreMascota2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/nombreMascota2"
-                    android:textSize="15dp"
                     android:text="Paciente: Snoopy"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    />
+                    android:textSize="15dp" />
+
                 <TextView
+                    android:id="@+id/duenioMascota2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textSize="10dp"
                     android:text="Dueño: Andres Ariza"
-                    android:id="@+id/duenioMascota2"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?android:attr/textColorSecondary"
-                    />
+                    android:textSize="10dp" />
 
             </LinearLayout>
 
@@ -149,27 +147,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:textSize="10dp"
                     android:text="Sexo: Macho"
-                    android:textAppearance="?attr/textAppearanceBody2" />
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
                 <TextView
                     android:id="@+id/edadMascota2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
-                    android:textSize="10dp"
                     android:text="Edad: 6 años"
-                    android:textAppearance="?attr/textAppearanceBody2" />
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
                 <TextView
                     android:id="@+id/razaMascota2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
-                    android:textSize="10dp"
                     android:text="Raza: Salchicha"
-                    android:textAppearance="?attr/textAppearanceBody2"/>
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
             </LinearLayout>
 
@@ -180,12 +178,12 @@
 
                 <!-- Media -->
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-
                     android:id="@+id/imagenMascota3"
-                    app:srcCompat="@drawable/mascota3"
-                    android:scaleType="centerCrop" />
+                    android:layout_width="match_parent"
+
+                    android:layout_height="194dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/mascota3" />
             </LinearLayout>
 
             <LinearLayout
@@ -196,23 +194,22 @@
 
                 <!-- Title, secondary and supporting text -->
                 <TextView
+                    android:id="@+id/nombreMascota3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/nombreMascota3"
-                    android:textSize="15dp"
                     android:text="Paciente: minina"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    />
+                    android:textSize="15dp" />
+
                 <TextView
+                    android:id="@+id/duenioMascota3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textSize="10dp"
                     android:text="Dueño: Richard Acevedo"
-                    android:id="@+id/duenioMascota3"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?android:attr/textColorSecondary"
-                    />
+                    android:textSize="10dp" />
 
             </LinearLayout>
 
@@ -228,27 +225,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:textSize="10dp"
                     android:text="Sexo: Hembra"
-                    android:textAppearance="?attr/textAppearanceBody2" />
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
                 <TextView
                     android:id="@+id/edadMascota3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
-                    android:textSize="10dp"
                     android:text="Edad: 4 años"
-                    android:textAppearance="?attr/textAppearanceBody2" />
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
                 <TextView
                     android:id="@+id/razaMascota3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
-                    android:textSize="10dp"
                     android:text="Raza: Munchkin"
-                    android:textAppearance="?attr/textAppearanceBody2"/>
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textSize="10dp" />
 
             </LinearLayout>
 
