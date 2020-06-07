@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".administrator.PerfilFragment"
+        tools:context=".cuestomer.PerfilFragment"
         android:orientation="vertical">
 
         <LinearLayout
@@ -66,7 +66,7 @@
                             android:layout_height="268dp"
                             android:layout_gravity="center"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/profileadmin" />
+                            app:srcCompat="@drawable/profile" />
 
                     </LinearLayout>
 
@@ -96,7 +96,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="60dp"
-                                android:text="1090522841"
+                                android:text="1234987678"
                                 android:textAlignment="center"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textColor="#000000"
@@ -123,7 +123,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="100dp"
-                                android:text="Richard"
+                                android:text="Camilo"
                                 android:textAlignment="center"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textColor="#000000"
@@ -150,7 +150,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="100dp"
-                                android:text="Acevedo"
+                                android:text="Contreras"
                                 android:textAlignment="center"
                                 android:textAppearance="?attr/textAppearanceHeadline6"
                                 android:textColor="#000000"
