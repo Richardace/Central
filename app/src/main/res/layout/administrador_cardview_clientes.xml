@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.google.android.material.card.MaterialCardView android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#109DFA"
+        android:layout_marginTop="-20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BAA1FA"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pacientes">
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Media -->
+
+
+                <ImageView
+                    android:id="@+id/imagenCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cliente1"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/nombreCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diego Navas"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/identificacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identificación: 1029102002"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono: 312003385"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Electrónico: diego@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!-- Media -->
+                <ImageView
+                    android:id="@+id/imagenCliente2"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="194dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cliente2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/nombreCliente2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carolina Garcia"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/identificacion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identificación: 1029590302"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/telefono2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono: 312993385"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/email2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo Electrónico: carolina@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <!-- Media -->
+                <ImageView
+                    android:id="@+id/imagenCliente3"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="194dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cliente3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/nombreCliente3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Richard Acevedo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/identificacion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identificación: 10591042422"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/telefono3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono: 312456385"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/email3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:text="Correo Electrónico: richard@gmail.com"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>
