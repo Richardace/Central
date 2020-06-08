@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Login"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="286dp">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="214dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:src="@drawable/logocentralpet">
+
+    </ImageView>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnLoginAdministrator"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="26dp"
+        android:text="Ingresar como Administrador"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnLoginVeterinario"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="26dp"
+        android:text="Ingresar como Veterinario"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnLoginCliente"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="26dp"
+        android:text="Ingresar Como Cliente"
+        android:textSize="18sp" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnRecordarContraseña"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginBottom="10sp"
+        android:text="recordar contraseña"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginBottom="10sp"
+        android:text="registrate ahora"
+        android:textSize="18sp"
+
+
+        />
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>
