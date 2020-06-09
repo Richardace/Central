@@ -1,22 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".customer.CitasFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+android:layout_marginStart="8dp"
+android:layout_marginTop="8dp"
+android:layout_marginEnd="150dp"
+xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/text_citas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".customer.CitasFragment"
+    android:orientation="vertical">
+
+           <com.google.android.material.card.MaterialCardView android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="285dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="#FFD185"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Cita de Candy"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="12dp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#000000"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:text="Fecha: 29-04-12"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textSize="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="60dp"
+                                android:text="Candy"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textSize="9dp" />
+
+                        </LinearLayout>
+                        <!-- Media -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="201dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="129dp"
+                                android:layout_height="176dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="50dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="29-04-12"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textSize="9dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:text="8 PM"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/acepted"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Pendiente"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+
+               <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="285dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="#FFD185"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Cita de Candy"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="12dp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#000000"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:text="Fecha: 29-04-12"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textSize="9dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="60dp"
+                                android:text="Candy"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textSize="9dp" />
+
+                        </LinearLayout>
+                        <!-- Media -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="201dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="129dp"
+                                android:layout_height="176dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="50dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="29-04-12"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textSize="9dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:text="8 PM"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/cancel"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Pendiente"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+</ScrollView>
