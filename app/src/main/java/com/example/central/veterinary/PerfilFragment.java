@@ -18,6 +18,8 @@ public class PerfilFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.veterinary_fragment_perfil, container, false);
+
+
         return root;
     }
 }

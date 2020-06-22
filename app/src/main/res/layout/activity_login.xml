@@ -21,40 +21,46 @@ android:orientation="vertical">
     </ImageView>
 </RelativeLayout>
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <Button
-        android:id="@+id/btnLoginAdministrator"
-        android:layout_width="366dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:layout_marginBottom="10sp"
-        android:layout_marginLeft="26dp"
-        android:text="Ingresar como Administrador"
-        android:textSize="18sp" />
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Documento de Identidad">
 
-    <Button
-        android:id="@+id/btnLoginVeterinario"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70sp"
-        android:layout_marginBottom="10sp"
-        android:layout_marginLeft="26dp"
-        android:text="Ingresar como Veterinario"
-        android:textSize="18sp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <Button
-        android:id="@+id/btnLoginCliente"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120sp"
-        android:layout_marginBottom="10sp"
-        android:layout_marginLeft="26dp"
-        android:text="Ingresar Como Cliente"
-        android:textSize="18sp" />
-</RelativeLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clave">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+
+            android:id="@+id/btInicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesion"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
 
 <RelativeLayout
     android:layout_width="match_parent"
