@@ -12,7 +12,6 @@ import android.widget.Toast;
 import com.example.central.administrator.MainActivity;
 import com.example.central.customer.MainActivityCustomer;
 import com.example.central.veterinary.MainActivityVeterinary;
-import com.example.central.veterinary.Modelo.Mascota;
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONArray;
@@ -25,7 +24,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 
 public class Login extends AppCompatActivity {
 
@@ -79,6 +77,7 @@ public class Login extends AppCompatActivity {
             for (int i = 0; i < jsonArr.length(); i++) {
                 JSONObject jsonObject = jsonArr.getJSONObject(i);
                 String documento = jsonObject.optString("documento");
+                String id = jsonObject.optString("id");
                 String tipo_usuario = jsonObject.optString("tipo_usuario");
                 String password = jsonObject.optString("password");
 
@@ -87,7 +86,7 @@ public class Login extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                     switch (tipo_usuario) {
                         case "1" : inicioAdmin();break;
-                        case "2" : inicioVet();break;
+                        case "2" : inicioVet(id);break;
                         case "3" : inicioCustomer();break;
                     }
                 }
@@ -96,7 +95,6 @@ public class Login extends AppCompatActivity {
             Toast.makeText(Login.this, "Datos Incorrectos",
                     Toast.LENGTH_SHORT).show();
 
-
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -104,15 +102,15 @@ public class Login extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
     }
 
     public void inicioAdmin(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-    public void inicioVet(){
+    public void inicioVet(String id){
         Intent intent = new Intent(this, MainActivityVeterinary.class);
+        intent.putExtra("id_user_session",id);
         startActivity(intent);
     }
     public void inicioCustomer(){

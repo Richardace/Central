@@ -13,10 +13,13 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivityVeterinary extends AppCompatActivity {
 
+    String id_user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.veterinary_activity_main);
+        Bundle datos = this.getIntent().getExtras();
+        id_user = datos.getString("id_user_session");
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -29,4 +32,9 @@ public class MainActivityVeterinary extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    public String getDataFragment(){
+
+        return id_user;
+
+    }
 }
